@@ -1,11 +1,10 @@
 export const MODELS = [
-  { id: "gpt-5.2:none", name: "GPT-5.2 (No Reasoning)" },
-  { id: "gpt-5.2:low", name: "GPT-5.2 (Low Reasoning)" },
-  { id: "gpt-5.2:medium", name: "GPT-5.2 (Medium Reasoning)" },
-  { id: "gpt-5.2:high", name: "GPT-5.2 (High Reasoning)" },
-  { id: "gpt-5.2-pro:medium", name: "GPT-5.2 Pro (Medium)" },
-  { id: "gpt-5.2-pro:high", name: "GPT-5.2 Pro (High)" },
-  { id: "gpt-5.2-pro:xhigh", name: "GPT-5.2 Pro (XHigh)" },
+  { id: "gemini-2.5-flash", name: "Gemini 2.5 Flash" },
+  { id: "gemini-2.5-pro", name: "Gemini 2.5 Pro" },
+  { id: "gemini-2.0-flash", name: "Gemini 2.0 Flash" },
+  { id: "gemma-3-27b-it", name: "Gemma 3 27B" },
+  { id: "gemma-4-26b-it", name: "Gemma 4 26B" },
+  { id: "gemma-4-31b-it", name: "Gemma 4 31B" },
 ] as const;
 
 export type ModelId = (typeof MODELS)[number]["id"];

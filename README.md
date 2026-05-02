@@ -51,6 +51,10 @@ Uses a one-shot prompt with the base Remotion knowledge plus any detected skills
 
 The response is cleaned (removing markdown wrappers and trailing commentary), then compiled in-browser using Babel. The compiled component renders directly in the Remotion Preview with all necessary APIs injected.
 
+### 5. Web Rendering
+
+Videos are rendered directly in the browser using `@remotion/web-renderer`. No server-side rendering infrastructure needed — just click "Render & Download" and the video is encoded client-side as an MP4.
+
 ## Skills System
 
 Skills enable contextual expertise without bloating every prompt. Located in `src/skills/`:
@@ -94,6 +98,14 @@ Example skills provide complete working references (histogram, chat messages, ty
 - Social media content (Stories, Reels, TikTok)
 - Logo animations and brand intros
 - Abstract motion graphics
+
+## Setup
+
+1. Copy `.env.example` to `.env.local` and add your Google Gemini API key:
+
+```
+GOOGLE_GENERATIVE_AI_API_KEY=your-key-here
+```
 
 ## Commands
 

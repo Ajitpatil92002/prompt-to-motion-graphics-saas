@@ -34,22 +34,15 @@ export const RenderControls: React.FC<{
     previousPropsRef.current = { code, durationInFrames, fps };
   }, [code, durationInFrames, fps, state.status, undo]);
 
-  if (
-    state.status === "init" ||
-    state.status === "invoking" ||
-    state.status === "error"
-  ) {
+  if (state.status === "init" || state.status === "error") {
     return (
       <div>
         <Button
-          disabled={state.status === "invoking" || !code}
-          loading={state.status === "invoking"}
+          disabled={!code}
           onClick={renderMedia}
         >
           <Download className="w-4 h-4 mr-2" />
-          {state.status === "invoking"
-            ? "Starting render..."
-            : "Render & Download"}
+          Render & Download
         </Button>
         {state.status === "error" && (
           <ErrorComp message={state.error.message} />
