@@ -296,7 +296,7 @@ interface GenerateResponse {
 export async function POST(req: Request) {
   const {
     prompt,
-    model = "gemini-2.5-pro",
+    model = "gemma-4-31b-it",
     currentCode,
     conversationHistory = [],
     isFollowUp = false,
