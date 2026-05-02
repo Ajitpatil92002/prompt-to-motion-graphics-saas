@@ -101,9 +101,10 @@ Example skills provide complete working references (histogram, chat messages, ty
 
 ## Setup
 
-1. Copy `.env.example` to `.env.local` and add your Google Gemini API key:
+1. Copy `.env.example` to `.env.local` and add your Google Gemini API key.
+   You can get your API key from [Google AI Studio](https://aistudio.google.com/api-keys).
 
-```
+```env
 GOOGLE_GENERATIVE_AI_API_KEY=your-key-here
 ```
 
